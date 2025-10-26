@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Find the Hidden Star ⭐</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Extra style for the back button so it matches your homepage */
+    .back-home-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 15px;
+      background: #3498db;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: background 0.3s ease;
+    }
+    .back-home-btn:hover {
+      background: #1d6fa5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>⭐ Find the Hidden Star Game ⭐</h1>
+    <p>Click the tiles to find the hidden star before time runs out!</p>
+  </header>
+
+  <main>
+    <div id="hud">
+      <div>Level: <span id="level">1</span></div>
+      <div>Score: <span id="score">0</span></div>
+      <div>Lives: <span id="lives">4</span></div>
+      <div>Time: <span id="time">00:00</span></div>
+    </div>
+
+    <div id="grid" class="grid"></div>
+
+    <div class="buttons">
+      <button id="startBtn">Start Game</button>
+    </div>
+
+    <p id="message"></p>
+  </main>
+
+  <footer style="text-align:center; margin-top:30px;">
+    <p>Dorian Star Game</p>
+    <!-- ✅ New back-to-home link -->
+    <a href="../../index.html" class="back-home-btn">⬅ Back to Home Page</a>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

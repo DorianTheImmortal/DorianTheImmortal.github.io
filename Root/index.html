@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home - My Portfolio</title>
+  <!-- Make sure this file really exists at CSS/style.css (lowercase .css) -->
+  <link rel="stylesheet" href="CSS/style.css">
+  <style>
+    /* Force the game section to be visible and nicely styled */
+    #game-link-section{
+      display:block !important;
+      max-width:900px;margin:40px auto;padding:24px;
+      border:2px solid #3498db;border-radius:12px;text-align:center;
+      background:#fff;color:#222;
+    }
+    #game-link-section h2{margin:0 0 8px}
+    #game-link-section p{margin:0 0 16px}
+    .game-btn{
+      display:inline-block;padding:10px 20px;background:#3498db;color:#fff;
+      border-radius:8px;text-decoration:none;font-size:1.1rem
+    }
+    .game-btn:hover{background:#1d6fa5}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Isaiah Dorian Perkins</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Pages/education.html">Education</a>
+      <a href="Pages/skills.html">Skills</a>
+    </nav>
+    <!-- Dynamic greeting will be injected here by script.js -->
+  </header>
+
+  <main>
+    <h2>Welcome</h2>
+    <p>
+      Hi, I’m Dorian — a passionate student eager to grow my skills in web 
+      development, programming, and software engineering. This is my online résumé, 
+      built with HTML, CSS, and JavaScript.
+    </p>
+
+    <!-- Updated profile image -->
+    <img src="Images/tiger.jpg" alt="Tiger Profile Picture" class="profile-pic">
+
+    <h2>About Me</h2>
+    <p>
+      I enjoy learning new technologies and solving problems through code. My 
+      interests include front-end development, software engineering, and working 
+      with collaborative teams. Beyond coding, I’m passionate about fitness — 
+      I train consistently in the gym and currently have a 315 lb bench press, 
+      which represents the same discipline and dedication I bring to my work. 
+      I also love programming games, combining creativity with logic to design 
+      fun and interactive experiences. These hobbies help me stay balanced, 
+      motivated, and constantly pushing myself to improve both physically and 
+      mentally.
+    </p>
+
+    <!-- ======================= -->
+    <!--  Game Link (new section) -->
+    <!-- ======================= -->
+    <section id="game-link-section">
+      <h2>Play My JavaScript Game — Find the Hidden Star ⭐</h2>
+      <p>Click below to play the game and beat the timer!</p>
+      <a class="game-btn" href="games/hidden-star/index.html">▶ Play Game</a>
+      <div style="margin-top:10px">
+        <small>Direct path: <a href="games/hidden-star/index.html">games/hidden-star/index.html</a></small>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Dorian | 
+      <a href="https://github.com/DorianTheImmortal" target="_blank" style="color:white;">
+        GitHub
+      </a>
+    </p>
+  </footer>
+
+  <!-- Link JavaScript -->
+  <script src="JS/script.js"></script>
+</body>
+</html>
+
